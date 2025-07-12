@@ -12,8 +12,6 @@
 
   img {
     width: 100%;
-    display: block;
-    overflow: hidden;
   }
 
   ul li {
@@ -32,7 +30,7 @@
 
     --fw-400:400;
     --fw-700:700;
-
+    --c-white:#ffff;
     --c-Slate-300:#e2e8f0;
     --c-Slate-500:#64748b;
     --c-Slate-900:#0f172a;
@@ -42,11 +40,63 @@
    /* =============================
    3. BASE STYLES
    ============================= */
+   body {
+    font-family: var(--ff);
+    background-color: var(--c-Slate-300);
+   }
+
+   p {
+    font-size: var(--fs);
+   }
 
 
    /* =============================
    4. LAYOUT / COMPONENT STYLES
    ============================= */
+   .wrapper {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .container {
+    width: 20rem;
+    background-color: var(--c-white);
+    border-radius: 1rem;
+    text-align: center;
+    
+   }
+
+   .qr-img {
+    padding: 1rem;
+   }
+
+   img {
+    border-radius: 1rem;
+   }
+
+   .text {
+    padding: 1rem;
+   }
+
+   p {
+    color: var(--c-Slate-500);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+   }
+
+   .attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 2rem;
+    }
+   
+   .attribution a { 
+    color: hsl(228, 45%, 44%); 
+    }   
    
 
       /* =============================
